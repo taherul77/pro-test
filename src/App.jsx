@@ -11,8 +11,10 @@ import {
   Works,
   StarsCanvas,
 } from "./components";
+import Scrool from "./components/scrool/Scrool";
 
 const App = () => {
+  
   return (
     <BrowserRouter>
       <div className="relative z-0 bg-primary">
@@ -23,12 +25,15 @@ const App = () => {
         <div>
           <About />
           <Experience />
+            <Scrool></Scrool>
           <Tech />
           <Works />
+        
           <Feedbacks />
           <div className="relative z-0">
             <Contact />
              {/* <StarsCanvas /> */}
+            
           </div>
           <StarsCanvas />
         </div>
